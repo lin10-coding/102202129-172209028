@@ -1,0 +1,98 @@
+<!--pages/id/index.wxml-->
+<van-grid iconsize="px" style="width: 100%;position: fixed;bottom: 10px;" clickable>
+  <van-grid-item icon="label" text="首页" url="/pages/index/index"/>
+  <van-grid-item icon="cluster" text="项目" url="/pages/project/index"/>
+  <van-grid-item icon="comment" text="消息" url="/pages/message/index"/>
+  <van-grid-item icon="manager" text="我的" url="/pages/my/index"/>
+</van-grid>
+
+<van-icon  size="150px" name="https://b.yzcdn.cn/vant/icon-demo-1126.png" class="touxiang"/>
+<view>
+    <test class="test1">编辑个人资料</test>
+    <test class="test2">用户名</test>
+    <test class="test3">昵称</test>
+    <test class="test4">站内ID</test>
+    <test class="test5">个性签名</test>
+    <test class="test6">专业</test>
+    <test class="test7">年级</test>
+    <test class="test8">性别</test>
+    <test class="test9">技术简介</test>
+</view>
+<van-cell-group class="weizhi1">
+    <van-field
+    value="{{ value }}"
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onChange"
+    />
+</van-cell-group>
+<van-cell-group class="weizhi2">
+    <van-field
+    value="{{ value }}"
+    placeholder="请输入昵称"
+    border="{{ false }}"
+    bind:change="onChange"
+    />
+</van-cell-group>
+<van-cell-group class="weizhi3">
+  <van-field
+    value="1145141919810"
+    left-icon="contact"
+    disabled
+    border="{{ false }}"
+  />
+</van-cell-group>
+<van-cell-group class="weizhi4">
+    <van-field
+    value="{{ value }}"
+    placeholder="请输入个性签名"
+    border="{{ false }}"
+    bind:change="onChange"
+    />
+</van-cell-group>
+<van-cell-group class="weizhi5">
+    <van-field
+    value="{{ value }}"
+    placeholder="请输入专业"
+    border="{{ false }}"
+    bind:change="onChange"
+    />
+</van-cell-group>
+<van-cell-group class="weizhi6">
+    <van-field
+    value="{{ value }}"
+    placeholder="请输入年级"
+    border="{{ false }}"
+    bind:change="onChange"
+    />
+</van-cell-group>
+<van-cell-group class="weizhi7">
+    <van-field
+    value="{{ value }}"
+    placeholder="请输入性别"
+    border="{{ false }}"
+    bind:change="onChange"
+    />
+</van-cell-group>
+<van-cell-group class="weizhi8">
+    <van-field
+    value="{{ value }}"
+    placeholder="请输入技术简介"
+    border="{{ false }}"
+    bind:change="onChange"
+    />
+</van-cell-group>
+
+
+  <van-icon 
+    name="certificate" 
+    class="mini-button" 
+    size="40px" 
+    bind:click="tomy" 
+    color="purple" 
+  />
+  <view>
+    <test class="test_keep" bind:tap="tomy">保存</test>
+  </view>
+
+

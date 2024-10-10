@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/project/index",
+    "pages/message/index",
+    "pages/my/index",
+    "pages/detail/index",
+    "pages/newproject/index",
+    "pages/chat/index",
+    "pages/id/index",
+    "pages/register/index",
+    "pages/onlinechat/index"
+    
+    
+  ],
+ 
+ 
+
+
+"usingComponents": {
+  "van-grid": "@vant/weapp/grid/index",
+  "van-grid-item": "@vant/weapp/grid-item/index",
+  "van-image": "@vant/weapp/image/index",
+  "van-search": "@vant/weapp/search/index",
+  "van-card": "@vant/weapp/card/index",
+  "van-divider": "@vant/weapp/divider/index",
+  "van-icon": "@vant/weapp/icon/index",
+  "van-nav-bar": "@vant/weapp/nav-bar/index",
+  "van-circle": "@vant/weapp/circle/index",
+  "van-skeleton": "@vant/weapp/skeleton/index",
+  "van-switch": "@vant/weapp/switch/index",
+  "van-steps": "@vant/weapp/steps/index",
+  "van-cell": "@vant/weapp/cell/index",
+  "van-cell-group": "@vant/weapp/cell-group/index",
+  "van-share-sheet": "@vant/weapp/share-sheet/index",
+  "van-field": "@vant/weapp/field/index",
+  "van-checkbox": "@vant/weapp/checkbox/index",
+  "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+  "van-stepper": "@vant/weapp/stepper/index",
+  "van-uploader": "@vant/weapp/uploader/index",
+  "van-calendar": "@vant/weapp/calendar/index",
+  "van-row": "@vant/weapp/row/index",
+  "van-col": "@vant/weapp/col/index",
+  "van-notice-bar": "@vant/weapp/notice-bar/index"
+  
+  
+  
+  
+  
+},
+
+  
+"window": {
+
+  "backgroundTextStyle": "light",
+
+  "navigationBarBackgroundColor": "#E0E0E0",
+
+  "navigationBarTitleText": "TitleText",
+
+  "navigationBarTextStyle": "white",
+
+  "navigationStyle":"custom"
+
+}
+
+  
+  
+ }
+
+ 
+ 

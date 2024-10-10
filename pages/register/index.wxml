@@ -1,0 +1,105 @@
+
+<van-nav-bar
+  title="注册 成为hero"
+  left-text="返回"
+  left-arrow
+  bind:click-left="onBack"
+  bind:click-right="onClickRight"
+  style="margin-top: 200px;position: relative;top: 30px;"
+
+/>
+
+<view>
+<view style="position: relative;top: 50px;font-weight: bold;font-size: 35px;left: 40px;">Welcome JZhero</view>
+
+
+
+
+
+
+
+
+
+<van-cell-group style="position: relative;top: 100px;">
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="用户名"
+    icon="question-o"
+    placeholder="请输入用户名"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="密码"
+    placeholder="请输入密码"
+    required
+    border="{{ false }}"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="确认密码"
+    placeholder="再次输入密码"
+    required
+    border="{{ false }}"
+  />
+
+  <van-cell title="选择生日" value="{{ date }}" bind:click="onDisplay" />
+<van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" />
+
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="安全邮箱"
+    placeholder="输入邮箱地址"
+    required
+    border="{{ false }}"
+  />
+
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="安全手机"
+    placeholder="输入手机号"
+    required
+    border="{{ false }}"
+  />
+
+
+  <van-cell-group>
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+    label="短信验证码"
+    placeholder="请输入短信验证码"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary">
+      发送验证码
+    </van-button>
+  </van-field>
+</van-cell-group>
+
+  
+</van-cell-group>
+
+
+<button class="register-button" bindtap="goToRegister" style="position: relative;top: 200px;width: 70%;">注册</button>
+
+</view>
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<view class="top">
+<van-nav-bar
+  title="YourProjects"
+  left-text="返回"
+  right-text="按钮"
+  left-arrow
+  bind:click-left="onBack"
+  bind:click-right="onClickRight"
+  style="margin-top: 200px;position: relative;top: 50px;"
+
+/>
+</view>
+
+
+<van-search
+  value="{{ value }}"
+  shape="round"
+  background="#D2F3F7"
+  placeholder="搜索项目关键词"
+  style="position: relative;top: 80px;"
+/>
+
+
+
+  <van-card style="position: relative;top: 100px;"
+  
+  
+  desc="xxxxxx"
+  title="人类复兴计划"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="todetail"/>                       </van-button>
+    
+  </view>
+</van-card> <!--car3-->
+
+<van-card style="position: relative;top: 100px;"
+  
+  
+  desc="xxxxxx"
+  title="人类复兴计划"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="todetail"/>                       </van-button>
+    
+  </view>
+</van-card> <!--car3-->
+
+<van-card style="position: relative;top: 100px;"
+  
+  
+  desc="xxxxxx"
+  title="人类复兴计划"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="todetail"/>                       </van-button>
+    
+  </view>
+</van-card> <!--car3-->
+
+<van-cell
+  is-link
+  title="新建项目"
+  link-type="navigateTo"
+  url="/pages/newproject/index"
+  size="large"
+  style="position: relative;top: 120px;width: 100%;"
+/>
+
+<van-cell title="更多操作" bind:click="onClick" size="large" style="top: 150px;position: relative;"/>
+<van-share-sheet
+  show="{{ showShare }}"
+  title="更多操作"
+  options="{{ options }}"
+  bind:select="onSelect"
+  bind:close="onClose"
+
+/>
+
+
+
+<van-grid iconsize="px" style="width: 100%;position: fixed;bottom: 10px;" clickable>
+  <van-grid-item icon="label" text="首页" url="/pages/index/index"/>
+  <van-grid-item icon="cluster" text="项目" url="/pages/project/index"/>
+  <van-grid-item icon="comment" text="消息" url="/pages/message/index"/>
+  <van-grid-item icon="manager" text="我的" url="/pages/my/index"/>
+</van-grid>

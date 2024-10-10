@@ -1,0 +1,75 @@
+<view class="top" style="height: 100vh;">
+<van-nav-bar
+  title="XXXX的聊天"
+  left-text="返回"
+  left-arrow
+  bind:click-left="onBack"
+  bind:click-right="onClickRight"
+  style="margin-top: 200px;position: relative;top: 30px;"
+
+/>
+
+<view class="chat-container">
+  <image class="avatar" src="{{avatarUrl}}" mode="aspectFill"/>
+  <view class="message-box">
+    <view class="message-bubble">
+      <text class="message-content">{{message}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="chat-container">
+  <image class="avatar" src="{{avatarUrl}}" mode="aspectFill"/>
+  <view class="message-box">
+    <view class="message-bubble">
+      <text class="message-content">{{message}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="chat-container">
+  <image class="avatar" src="{{avatarUrl}}" mode="aspectFill"/>
+  <view class="message-box">
+    <view class="message-bubble">
+      <text class="message-content">{{message}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="chat-container">
+  <image class="avatar" src="{{avatarUrl}}" mode="aspectFill"/>
+  <view class="message-box">
+    <view class="message-bubble">
+      <text class="message-content">{{message}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+<van-cell-group style="position: relative;top: 330px; ">
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+
+    placeholder="请输入"
+    border="{{ false }}"
+    use-button-slot
+  >
+    
+  </van-field>
+</van-cell-group>
+
+
+<van-icon name="arrow" size="30px" style="position: relative;top: 290px; left: 330px;"/>
+
+<van-icon name="plus" size="30px" style="position: relative;top: 290px; left: 350px;"/>
+
+
+
+
+</view>
+
+
+

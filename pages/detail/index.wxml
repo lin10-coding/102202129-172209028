@@ -1,0 +1,77 @@
+<view class="top">
+<van-nav-bar
+  title="YourProject"
+  left-text="返回"
+  right-text="按钮"
+  left-arrow
+  bind:click-left="onBack"
+  bind:click-right="onClickRight"
+  style="margin-top: 120px;position: relative;"
+
+/>
+</view>
+
+
+
+<view class="main" style="display: flexbox;height: 600px;">
+<van-circle value="{{ 66 }}" text="进度:" stroke-width="6" layer-color="#DEDADA" style="top: 30px;position: relative;left: 300px;"/>
+
+
+
+<van-skeleton title avatar row="3" loading="{{ true }}" style="position: relative;top: -10px;background-color: yellow;">
+  <view>实际内容</view>
+</van-skeleton>
+
+<van-steps steps="{{ steps }}" active="{{ active }}" style="margin-top: 20px;position: relative;top: 50px;margin-bottom: 1px;"/>
+
+<van-card style="position: relative;top: 100px;"
+  
+  
+  desc="聊天群组"
+  title="人类复兴计划"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="tochat"/>                       </van-button>
+    
+  </view>
+</van-card> <!--car3-->
+
+<van-cell
+  is-link
+  title="项目成员"
+  link-type="navigateTo"
+  url="/pages/dashboard/index"
+  size="large"
+  style="position: relative;top: 120px;width: 100%;"
+/>
+
+<van-cell
+  is-link
+  title="项目情况"
+  link-type="navigateTo"
+  url="/pages/dashboard/index"
+  size="large"
+  style="position: relative;top: 120px;width: 100%;"
+/>
+
+<van-cell
+  is-link
+  title="项目文件"
+  link-type="navigateTo"
+  url="/pages/dashboard/index"
+  size="large"
+  style="position: relative;top: 120px;width: 100%;"
+/>
+<van-cell
+  is-link
+  title="项目代码"
+  link-type="navigateTo"
+  url="/pages/dashboard/index"
+  size="large"
+  style="position: relative;top: 120px;width: 100%;"
+/>
+
+
+
+</view>

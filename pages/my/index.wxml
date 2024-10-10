@@ -1,0 +1,93 @@
+<van-grid iconsize="px" style="width: 100%;position: fixed;bottom: 10px;" clickable>
+  <van-grid-item icon="label" text="首页" url="/pages/index/index"/>
+  <van-grid-item icon="cluster" text="项目" url="/pages/project/index"/>
+  <van-grid-item icon="comment" text="消息" url="/pages/message/index"/>
+  <van-grid-item icon="manager" text="我的" url="/pages/my/index"/>
+</van-grid>
+
+
+<van-image 
+    class="my-button" 
+    width="105" 
+    height="40" 
+    src="/images/bjzl2.png" 
+    bind:click="toid"
+    />  <!--原本的button 没法用-->
+<van-icon class="touxiang" name="https://b.yzcdn.cn/vant/icon-demo-1126.png" size="135px"/>
+<van-divider class="xian1" borderColor="#1989fa"> </van-divider>
+
+<view>
+  <text class="text1">鉴证英雄</text>
+  <text class="text2">贴子        关注        收藏        粉丝</text>
+</view>
+<van-divider class="xian2" borderColor="#1989fa" > </van-divider>
+<view>
+    <text class="text3">常用功能</text>>
+</view>
+
+<van-image
+    round
+    width="5rem"
+    height="5rem"
+    src="/images/4.jpg"
+    class="anniu1"
+/>
+
+
+<van-icon name="setting" color="grey" size="90px" class="anniu2"/>
+
+
+<van-image
+    round
+    width="5rem"
+    height="5rem"
+    src="/images/7.jpg"
+    class="anniu3"
+/>
+
+<van-icon name="warning" color="grey" size="90px" class="anniu4"/>
+
+<van-icon name="checked" color="grey" size="90px" class="anniu5"/>
+
+<van-icon name="add" color="grey" size="90px" class="anniu6"/>
+
+<view>
+    <text class="text4">书架</text>
+    <text class="text5">设置</text>
+    <text class="text6">会员中心</text>
+    <text class="text7">账号检测</text>
+    <text class="text8">认证中心</text>
+    <text class="text9">创建贴子</text>
+</view>
+
+
+<van-notice-bar 
+    scrollable text="工农大团结！丢掉幻想，准备斗争！！！————毛泽东同志" 
+    color="red"
+    background="#ecf9ff"  
+/>
+<view class="container">
+<view class="sw1">
+  <swiper
+    autoplay="true" 
+    interval="3000" 
+    duration="1000"
+    style="width: 95%; height: 100%;position: relative;left: 10px;"
+    circular="true"
+    indicator-dots="true"
+    indicator-color="rgba(0, 0, 0, .3)"
+    indicator-active-color="#000000"
+  >
+    <swiper-item>
+      <image src="/images/m1.jpg" class="slide-image" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/m2.png" class="slide-image" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/m3.png" class="slide-image" />
+    </swiper-item>
+  </swiper>
+</view>
+</view>
+

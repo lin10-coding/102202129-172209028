@@ -1,0 +1,35 @@
+.chat-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  top:80px;
+  left: 10px;
+}
+
+.avatar {
+  width: 50px; /* 头像宽度 */
+  height: 50px; /* 头像高度 */
+  border-radius: 50%; /* 圆形头像 */
+  margin-right: 10px; /* 与气泡框的间距 */
+}
+
+.message-box {
+  max-width: 60%; /* 气泡框最大宽度 */
+  background-color: #f0f0f0; /* 气泡框背景颜色 */
+  padding: 10px; /* 气泡框内边距 */
+  border-radius: 5px; /* 气泡框圆角 */
+  display: inline-block;
+}
+
+.message-bubble {
+  background-color: #fff; /* 消息内容背景颜色 */
+  padding: 10px; /* 消息内容内边距 */
+  border-radius: 5px; /* 消息内容圆角 */
+}
+
+.message-content {
+  font-size: 16px; /* 文字大小 */
+  color: #333; /* 文字颜色 */
+}
+

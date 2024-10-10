@@ -1,0 +1,98 @@
+<view class="container" style="height: 180px; margin-bottom: 0;">
+  <van-grid  column-num="3" style="width: 100%;position: relative;top: 40px;">
+  <van-grid-item icon="comment-o" text="评论和@" info="22" />
+  <van-grid-item icon="like-o" text="赞和收藏" info="99+" />
+  <van-grid-item icon="fire-o" text="粉丝与浏览" info="9999+" />
+</van-grid>
+</view>
+
+<view class="main" style="height: 600px;">
+  <van-divider contentPosition="center">文本</van-divider>
+
+  <van-card
+  
+  tag="3条未读 "
+  desc="软工作业好难"
+  title="好友A"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+  
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="tochat"/>                       </van-button>
+  
+  </view>
+</van-card> <!--car1-->
+
+<van-card
+  
+  tag="1条未读 "
+  desc="我说了我没有开挂"
+  title="伞兵一号卢本伟"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+  
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="tochat"/>                       </van-button>
+  
+  </view>
+</van-card> <!--car1-->
+<van-card
+  
+  tag="99条未读  "
+  desc="我只喜欢relx，我是妈妈生的，雪豹闭嘴..."
+  title="丁真"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+  
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="tochat"/>                       </van-button>
+   
+  </view>
+</van-card> <!--car1-->
+
+<van-card
+  
+  tag=" "
+  desc="我想吃麦当劳"
+  title="胖猫"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+  
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="tochat"/>                       </van-button>
+    
+  </view>
+</van-card> <!--car1-->
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<van-grid iconsize="px" style="width: 100%;position: fixed;bottom: 10px;" clickable>
+  <van-grid-item icon="label" text="首页" url="/pages/index/index"/>
+  <van-grid-item icon="cluster" text="项目" url="/pages/project/index"/>
+  <van-grid-item icon="comment" text="消息" url="/pages/message/index"/>
+  <van-grid-item icon="manager" text="我的" url="/pages/my/index"/>
+</van-grid>

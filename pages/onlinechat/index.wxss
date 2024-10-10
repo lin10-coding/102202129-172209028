@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.mine {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+}
+
+input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button {
+  margin-left: 10px;
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.back-button button {
+  background-color: transparent;
+  color: #007AFF;
+  border: none;
+}

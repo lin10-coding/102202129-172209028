@@ -1,0 +1,32 @@
+.container {
+  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(226, 240, 240);
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.auth-button {
+  width: 100px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: #1aad19; /* 按钮背景颜色 */
+  color: #ffffff; /* 按钮文字颜色 */
+  border: none;
+  border-radius: 5px; /* 按钮圆角 */
+  font-size: 16px; /* 按钮文字大小 */
+}
+
+.login-button {
+  background-color: #1aad19; /* 登录按钮背景颜色 */
+}
+
+.register-button {
+  background-color: #576b95; /* 注册按钮背景颜色 */
+}

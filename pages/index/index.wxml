@@ -1,0 +1,100 @@
+<view class="container">
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+  style="margin-top: 60px;position:relative;left: 0;margin-right: 60px;width: 70%;"
+/>
+
+
+<view class="sw">
+  <swiper
+    autoplay="true" 
+    interval="3000" 
+    duration="1000"
+    style="width: 95%; height: 30%;position: relative;left: 10px;"
+    circular="true"
+    indicator-dots="true"
+    indicator-color="rgba(0, 0, 0, .3)"
+    indicator-active-color="#000000"
+  >
+    <swiper-item>
+      <image src="/images/slide1.jpg" class="slide-image" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/slide2.jpg" class="slide-image" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/slide3.jpg" class="slide-image" />
+    </swiper-item>
+  </swiper>
+
+  <van-divider customStyle="color: #1989fa; border-color: #1989fa; font-size: 30px;" />
+
+  <van-card
+  
+  tag="NO.1  "
+  desc="我们先选择想要使用的aigc工具，输入具体需求。。。。。"
+  title="如何用ai一天写完国庆的所有作业"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+  
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="todetail"/>                       </van-button>
+    <van-button size="mini">                         <van-icon name="like" color="{{iconColor}}"  size="30px" bind:click="toggleIconColor"/>    </van-button>
+  </view>
+</van-card> <!--car1-->
+
+<van-card
+  
+  tag="NO.2  "
+  desc="我们先选择想要使用的aigc工具，输入具体需求。。。。。"
+  title="如何用ai一天写完国庆的所有作业"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="todetail"/>                       </van-button>
+    <van-button size="mini">                         <van-icon name="like" color="{{iconColor}}"  size="30px" bind:click="toggleIconColor"/>    </van-button>
+  </view>
+</van-card> <!--car2-->
+
+<van-card
+  
+  tag="NO.3  "
+  desc="我们先选择想要使用的aigc工具，输入具体需求。。。。。"
+  title="如何用ai一天写完国庆的所有作业"
+  thumb="https://tse3-mm.cn.bing.net/th/id/OIP-C.BsbnwLoTgeNhaZiC1-XUfAHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7"
+>
+  <view slot="footer">
+    <van-button size="mini" style="margin: 20px;">   <van-icon name="chat" color="grey" size="30px" bind:click="todetail"/>                       </van-button>
+    <van-button size="mini">                         <van-icon name="like" color="{{iconColor}}"  size="30px" bind:click="toggleIconColor"/>    </van-button>
+  </view>
+</van-card> <!--car3-->
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+<van-grid iconsize="px" style="width: 100%;position: fixed;bottom: 10px;" clickable>
+  <van-grid-item icon="label" text="首页" url="/pages/index/index"/>
+  <van-grid-item icon="cluster" text="项目" url="/pages/project/index"/>
+  <van-grid-item icon="comment" text="消息" url="/pages/message/index"/>
+  <van-grid-item icon="manager" text="我的" url="/pages/my/index"/>
+</van-grid>
+
+
+
+
+</view>

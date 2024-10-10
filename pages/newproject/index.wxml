@@ -1,0 +1,81 @@
+<view class="top">
+<van-nav-bar
+  title="新建项目"
+  left-text="返回"
+  right-text="按钮"
+  left-arrow
+  bind:click-left="onBack"
+  bind:click-right="onClickRight"
+  style="margin-top: 200px;position: relative;top: 50px;"
+
+/>
+</view>
+
+<view class="container">
+  <van-cell-group style="width: 100%;"> 
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入项目名称"
+    border="{{ true }}"
+    bind:change="onChange"
+    label="项目名称"
+  />
+</van-cell-group>
+
+<van-cell-group style="width: 100%;margin-top: 30px;">
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="项目简介"
+    icon="question-o"
+    placeholder="请输入项目简介"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="项目需求"
+    placeholder="请输入项目需求"
+    required
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+<van-checkbox-group value="{{ result }}" bind:change="onChange" style="position: relative;left: -50px;top: 10px;">
+  <van-checkbox name="a">前端</van-checkbox>
+  <view style="margin-bottom: 15px;"></view>
+  <van-checkbox name="b">后端</van-checkbox>
+  <view style="margin-bottom: 15px;"></view>
+  <van-checkbox name="c">美工</van-checkbox>
+</van-checkbox-group>
+
+<van-stepper value="{{ 1 }}" bind:change="onChange" style="position: relative;top: -85px; left: 60px;" />
+<van-stepper value="{{ 1 }}" bind:change="onChange" style="position: relative;top: -80px;left: 60px;" />
+<van-stepper value="{{ 1 }}" bind:change="onChange" style="position: relative;top: -75px;left: 60px;" />
+
+<van-icon name="friends-o" size="70px" style="position: relative;top: -160px;left:-150px;"/>
+
+
+<van-cell title="选择项目时间区间" value="{{ date }}" bind:click="onDisplay" style="position: relative;top: -80px;width: 80%;text-align: center;"/>
+<van-calendar
+  show="{{ show }}"
+  type="range"
+  bind:close="onClose"
+  bind:confirm="onConfirm"
+/>
+
+</view>
+
+<view class="mid" style="width: 100%;height: 500px;">
+  <van-uploader style="position: relative;top: -150px;left: 30px;" file-list="{{ fileList }}" bind:after-read="afterRead" />
+  <view class="text" style="position: relative;top: -210px;left: 150px;">上传文件项目</view>
+
+  <van-icon name="upgrade" size="80px"  style="position: relative;top: -120px;left:170px;" bind:click="creat"/>
+
+
+
+
+  <view class="text" style="position: relative;top: -100px;left: 155px;">创建并发布项目</view>
+</view>

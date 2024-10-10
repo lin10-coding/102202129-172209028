@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="chat-list">
+    <!-- 聊天记录展示区域 -->
+    <block wx:for="{{chatHistory}}" wx:key="index">
+      <view class="message {{item.sender === 'me'? 'mine' : ''}}">
+        <text>{{item.sender}}: {{item.content}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="input-area">
+    <input type="text" bindinput="onInputChange" placeholder="输入消息" />
+    <button bindtap="sendMessage">发送</button>
+  </view>
+  <view class="back-button" style="position: absolute; top: 50rpx; left: 10rpx;">
+    <button bindtap="goBack">返回</button>
+  </view>
+</view>
